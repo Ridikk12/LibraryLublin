@@ -1,0 +1,34 @@
+﻿@model  Library.ViewModels.UserRegistryViewModel
+
+@if (ViewData["ModalMessage"] != null && !string.IsNullOrEmpty(ViewData["ModalMessage"].ToString()))
+{
+    @Html.Partial("ResultModal")
+}
+<div class="header">
+    <center><h2 class="loginHeader">Register new library user</h2></center>
+</div>
+    @using (Html.BeginForm("Register", "Account", FormMethod.Post))
+    {
+        <div class="loginPage">
+        @Html.ValidationSummary(true)
+
+        @Html.LabelFor(x => x.UserEmail, new { @class = "form-control-label" })
+        @Html.TextBoxFor(x => x.UserEmail, new { @class = "form-control" })
+        @Html.ValidationMessageFor(x => x.UserEmail)
+        <br />
+        @Html.LabelFor(x => x.UserName, new { @class = "form-control-label" })
+        @Html.TextBoxFor(x => x.UserName, new { @class = "form-control" })
+        @Html.ValidationMessageFor(x => x.UserName)
+        <br />
+        @Html.LabelFor(x => x.UserPassword, new { @class = "form-control-label" })
+        @Html.PasswordFor(x => x.UserPassword, new { @class = "form-control" })
+        @Html.ValidationMessageFor(x => x.UserPassword)
+    <br />
+
+       <div class="buttonGroup">
+            <button type="submit" class="btn btn-success"> Register</button>
+            @Html.ActionLink("Back to login page","Login",null,new { @class="btn btn-primary pull-right"}) 
+       </div>
+    </div>
+    }
+    

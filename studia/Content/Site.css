@@ -1,0 +1,124 @@
+﻿body {
+      
+}
+
+.loginLayout{
+      background-image:url("lid.jpg");
+        background-size:cover;
+}
+
+.loginHeader{
+    color:black !important;
+}
+
+
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal; 
+}
+
+
+.imageContainer{
+    width:250px;
+    height:200px; 
+    border:1px solid;
+}
+.imageInput {
+    width:250px
+}
+
+.loginPage {
+    border-radius: 20px;
+    background-color:white;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top:12%;
+    width:20%;
+    padding: 10px;
+
+}
+.field-validation-error{ color: red; font-style:italic; }
+ .validation-summary-errors
+        {
+           color: red; font-style:italic;
+        }
+
+ .header {
+     color:white;
+ }
+
+ .myMenu{
+    background-color:black;
+    width:10%;
+    float:left;
+    height:100%;
+    color:white;
+    position:fixed;
+   padding-left:10px;
+ }
+ .menu-options
+ {
+
+ }
+ .Logout{
+
+   position:fixed;
+   left:61px;
+   bottom:15px;
+ }
+
+ .Layout-fixed{
+     float:left;
+     width:10%;
+     height:10px
+
+ }
+
+ #mainContent{
+
+     background-color:white;
+     width:90%;
+     float:left;
+     padding:10px;
+ }
+
+ .buttonGroup{
+     padding:5px;
+ }
+
+ .myMenu ul {
+    color:white;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: auto;
+}
+  .myMenu li{
+    color:white;
+     display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+     cursor:pointer;
+}
+
+
+  .myMenu li.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+ .myMenu li:hover:not(.active) {
+    background-color: #555;
+    color: white;
+
+}

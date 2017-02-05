@@ -1,0 +1,14 @@
+﻿@model List<Library.ViewModels.Book.BookListViewModel>
+
+@if (ViewData["ModalMessage"] != null && !string.IsNullOrEmpty(ViewData["ModalMessage"].ToString()))
+{
+    @Html.Partial("_ResultModal")
+}
+
+<div id="mainContent">
+
+    <h2>Recently added books</h2>
+    <hr />
+    @Html.Partial("_BookList", Model)
+    <hr />
+</div>

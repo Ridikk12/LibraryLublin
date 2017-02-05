@@ -1,0 +1,28 @@
+﻿@model  Library.ViewModels.UserLogInViewModel
+@if (ViewData["ModalMessage"] != null && !string.IsNullOrEmpty(ViewData["ModalMessage"].ToString()))
+{
+    @Html.Partial("_ResultModal")
+}
+<div class="loginPage">
+@using (Html.BeginForm("Login", "Account", FormMethod.Post))
+{
+
+    @Html.ValidationSummary(true)
+    <div class="form-group">
+        @Html.LabelFor(x => x.UserName, new { @class = "form-control-label" })
+        @Html.TextBoxFor(x => x.UserName, new { @class = "form-control" })
+        @Html.ValidationMessageFor(x => x.UserName)
+    </div>
+        <br />
+        <div class="form-group">
+            @Html.LabelFor(x => x.UserPassword, new { @class = "form-control-label" })
+            @Html.PasswordFor(x => x.UserPassword, new { @class = "form-control" })
+            @Html.ValidationMessageFor(x => x.UserPassword)
+           </div>
+     
+            <div class="buttonGroup">
+                <button type="submit" class="btn btn-success"> Login</button>
+                @Html.ActionLink("Register", "Register", "Account", new { @class = "btn btn-primary pull-right" })
+            </div>
+            }
+        </div>

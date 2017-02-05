@@ -1,0 +1,17 @@
+﻿
+<div class="myMenu">
+    <div class="menu-options">
+        <div class="header">
+            <h2>Menu</h2>
+        </div>
+         <ul>
+            <li>@Html.ActionLink("Dashboard", "Index", "Dashboard")</li>
+            <li>@Html.ActionLink("Rent Book", "BookList", "Dashboard")</li>
+            <li>@Html.ActionLink("My Books", "MyBooks", "Dashboard")</li>
+            <li>@Html.ActionLink("Add Book", "AddBook", "Dashboard")</li>
+        </ul>
+    </div>
+    <div class="Logout">
+        @Html.ActionLink("Logout", "Logout", "Account", null,new { @class="btn btn-danger"})
+    </div>
+</div>
