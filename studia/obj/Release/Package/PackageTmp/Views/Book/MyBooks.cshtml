@@ -1,0 +1,39 @@
+﻿@model List<Library.ViewModels.Book.BookListViewModel>
+@if (ViewData["ModalMessage"] != null && !string.IsNullOrEmpty(ViewData["ModalMessage"].ToString()))
+{
+    @Html.Partial("_ResultModal")
+}
+
+<div id="mainContent">
+    <h2>My rented books</h2>
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>Image</th>
+            <th>Title</th>
+            <th>Autor</th>
+            <th>Publish house</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (int i = 0; i < Model.Count; i++)
+            {
+            <tr>
+                <td width="150px">
+                    <img style="width:150px;height:150px;" src="data:image/jpg;base64, @Model[i].BookImageUrl" />
+                </td>
+                <td>
+                    @Model[i].BookName
+                </td>
+                <td>
+                    @Model[i].BookAuthor
+                </td>
+                <td>
+                    @Model[i].PublishingHouse
+                </td>
+            </tr>
+        }
+
+    </tbody>
+</table>
+</div>

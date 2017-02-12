@@ -1,0 +1,36 @@
+﻿@model Library.ViewModels.Book.BookCreateViewModel
+<h1>Edit book</h1>
+
+@using (Html.BeginForm())
+{
+    <div class="form" style="padding:30px">
+        <div class="form-group">
+            @Html.LabelFor(x => x.BookName, new { @class = "form-control-label" })
+            @Html.TextBoxFor(x => x.BookName, new { @class = "form-control" })
+            @Html.ValidationMessageFor(x => x.BookName)
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(x => x.BookAuthor, new { @class = "form-control-label" })
+            @Html.TextBoxFor(x => x.BookAuthor, new { @class = "form-control" })
+            @Html.ValidationMessageFor(x => x.BookAuthor)
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(x => x.BookSize, new { @class = "form-control-label" })
+            @Html.TextBoxFor(x => x.BookSize, new { @class = "form-control" })
+            @Html.ValidationMessageFor(x => x.BookSize)
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(x => x.PublishingHouse, new { @class = "form-control-label" })
+            @Html.TextBoxFor(x => x.PublishingHouse, new { @class = "form-control" })
+            @Html.ValidationMessageFor(x => x.PublishingHouse)
+        </div>
+        <div class="form-group">
+            @Html.Label("Avatar", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <input type="file" id="Avatar" name="upload" />
+            </div>
+        </div>
+    </div>
+}
+
+

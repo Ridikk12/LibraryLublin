@@ -10,6 +10,7 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
+    <link href="~/Content/font-awesome.css" rel="stylesheet" />
     <link href="~/Content/Site.css" rel="stylesheet" />
     <div class="Layout-fixed">
         @Html.Partial("_Menu")
@@ -21,7 +22,7 @@
     @RenderSection("scripts", required: false)
     <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
     @RenderBody()
-
+   
 </body>
 </html>
 <script>

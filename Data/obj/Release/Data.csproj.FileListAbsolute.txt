@@ -1,0 +1,17 @@
+C:\Users\Ano\Documents\Visual Studio 2015\Projects\studia\Data\bin\Release\Data.dll.config
+C:\Users\Ano\Documents\Visual Studio 2015\Projects\studia\Data\bin\Release\Data.dll
+C:\Users\Ano\Documents\Visual Studio 2015\Projects\studia\Data\bin\Release\Data.pdb
+C:\Users\Ano\Documents\Visual Studio 2015\Projects\studia\Data\bin\Release\EntityFramework.dll
+C:\Users\Ano\Documents\Visual Studio 2015\Projects\studia\Data\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Ano\Documents\Visual Studio 2015\Projects\studia\Data\bin\Release\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Ano\Documents\Visual Studio 2015\Projects\studia\Data\bin\Release\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Ano\Documents\Visual Studio 2015\Projects\studia\Data\bin\Release\Newtonsoft.Json.dll
+C:\Users\Ano\Documents\Visual Studio 2015\Projects\studia\Data\bin\Release\Owin.dll
+C:\Users\Ano\Documents\Visual Studio 2015\Projects\studia\Data\bin\Release\EntityFramework.xml
+C:\Users\Ano\Documents\Visual Studio 2015\Projects\studia\Data\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Ano\Documents\Visual Studio 2015\Projects\studia\Data\bin\Release\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Ano\Documents\Visual Studio 2015\Projects\studia\Data\bin\Release\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Ano\Documents\Visual Studio 2015\Projects\studia\Data\bin\Release\Newtonsoft.Json.xml
+C:\Users\Ano\Documents\Visual Studio 2015\Projects\studia\Data\obj\Release\Data.csprojResolveAssemblyReference.cache
+C:\Users\Ano\Documents\Visual Studio 2015\Projects\studia\Data\obj\Release\Data.dll
+C:\Users\Ano\Documents\Visual Studio 2015\Projects\studia\Data\obj\Release\Data.pdb

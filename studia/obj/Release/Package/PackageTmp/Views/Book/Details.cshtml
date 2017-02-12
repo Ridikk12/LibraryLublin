@@ -1,0 +1,51 @@
+﻿@model Library.ViewModels.Book.BookDetailsViewModel
+
+@if (ViewData["ModalMessage"] != null && !string.IsNullOrEmpty(ViewData["ModalMessage"].ToString()))
+{
+    @Html.Partial("ResultModal")
+}
+@using (Html.BeginForm("Rent","Library",FormMethod.Post))
+{
+    @Html.HiddenFor(x=> x.BookId)
+<div id="mainContent">
+    <h2>Details</h2>
+    <hr />
+        <div class="form col-lg-3">
+            <div class="form-group col-md-4">
+                <img id="bookImg" class="imageContainer" src="data:image/jpg;base64, @Model.Image" />
+            </div>
+        </div>
+        <div class="form col-lg-9">
+            <div class="row">
+                <div class="form-group col-md-4">
+                    @Html.LabelFor(x => x.BookName, new { @class = "form-control-label" })
+                    @Html.TextBoxFor(x => x.BookName, new { @class = "form-control", @readonly = "readonly" })
+                </div>
+                <div class="form-group col-md-4">
+                    @Html.LabelFor(x => x.BookAuthor, new { @class = "form-control-label" })
+                    @Html.TextBoxFor(x => x.BookAuthor, new { @class = "form-control", @readonly = "readonly" })
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group col-md-4">
+                    @Html.LabelFor(x => x.BookSize, new { @class = "form-control-label" })
+                    @Html.TextBoxFor(x => x.BookSize, new { @class = "form-control", @readonly = "readonly" })
+                </div>
+                <div class="form-group col-md-4">
+                    @Html.LabelFor(x => x.PublishingHouse, new { @class = "form-control-label" })
+                    @Html.TextBoxFor(x => x.PublishingHouse, new { @class = "form-control", @readonly = "readonly" })
+                </div>
+            </div>
+            @if (Model.Avalible)
+            {
+              <button type="submit" class="btn btn-success">Rent</button>
+            }
+            else
+            {
+                <p> Sorry, book unavaible. Predicted book avaible data: @Model.PredictedReturnData.Value </p>
+            }
+        </div>
+</div>
+}
+

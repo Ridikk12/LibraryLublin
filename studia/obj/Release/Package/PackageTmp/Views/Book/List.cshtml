@@ -1,0 +1,11 @@
+﻿@model List<Library.ViewModels.Book.BookListViewModel>
+    <div id="mainContent" style="padding:10px">
+        <h2>Search for book</h2>
+        @using (Html.BeginForm("Search","Book",FormMethod.Post))
+        {
+         <input type="text" name="serachString" class="form-control"/> 
+        <button style="margin-top:5px;margin-bottom:5px" type="submit" class="btn btn-success pull-right">Search</button>
+        }
+      
+    @Html.Partial("_BookList",Model)
+</div>

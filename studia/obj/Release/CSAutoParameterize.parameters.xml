@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="TestApp-Web.config Connection String" description="TestApp Connection String used in web.config by the application to access the database." defaultValue="Data Source=(LocalDb)\v11.0;Initial Catalog=TestApp1;Integrated Security=SSPI;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Ano\\Documents\\Visual\ Studio\ 2015\\Projects\\studia\\studia\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='TestApp']/@connectionString" />
+  </parameter>
+  <parameter name="Data.Context.AppContextEF-Web.config Connection String" description="Data.Context.AppContextEF Connection String used in web.config by the application to access the database." defaultValue="Data.Context.AppContextEF_ConnectionString" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Ano\\Documents\\Visual\ Studio\ 2015\\Projects\\studia\\studia\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='Data.Context.AppContextEF']/@connectionString" />
+  </parameter>
+</parameters>

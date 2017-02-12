@@ -26,6 +26,22 @@
     white-space: normal; 
 }
 
+.popupMessage{
+    width:auto;
+    height:100px;
+    position:fixed;
+    top:20px;
+    right:50px;
+    display: block;
+
+}
+
+@media screen and (min-width: 768px) {
+    .modal-dialog {
+        width: inherit;
+    }
+}
+
 
 .imageContainer{
     width:250px;
@@ -53,15 +69,21 @@
         }
 
  .header {
-     color:white;
+     justify-content:center;
+ }
+
+ h2{
+     text-align:center;
+     color:#003366;
  }
 
  .myMenu{
-    background-color:black;
+     border-right:2px solid #f2f2f2;
+     box-shadow: 1px 0px 5px #808080;
+    background-color:#CCCC99;
     width:10%;
     float:left;
     height:100%;
-    color:white;
     position:fixed;
    padding-left:10px;
  }
@@ -84,11 +106,11 @@
  }
 
  #mainContent{
-
-     background-color:white;
      width:90%;
      float:left;
      padding:10px;
+     background-color:#FFFFFF;
+   
  }
 
  .buttonGroup{
@@ -105,7 +127,7 @@
 }
   .myMenu li{
     color:white;
-     display: block;
+    display: block;
     padding: 8px 16px;
     text-decoration: none;
      cursor:pointer;

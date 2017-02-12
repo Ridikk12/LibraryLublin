@@ -1,0 +1,21 @@
+﻿<div class="modal fade" id="myModal">
+    <div class="modal-dialog"  role="dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+              @ViewData["ModalMessage"].ToString()
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $('#myModal').modal('show');
+        setTimeout(function () {
+
+            $('#myModal').modal("hide");
+
+        }, 1500);
+    });
+
+</script>

@@ -1,11 +1,13 @@
-﻿<div class="modal fade" id="myModal">
-    <div class="modal-dialog"  role="dialog">
-        <div class="modal-content">
-            <div class="modal-body">
-              @ViewData["ModalMessage"].ToString()
+﻿    <div class="modal fade" id="myModal">
+        <div class="popupMessage">
+            <div class="modal-dialog" role="dialog" data-backdrop="false">
+                <div class="modal-content">
+                    <div class="modal-body">
+                            @ViewData["ModalMessage"].ToString()
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
 </div>
 <script type="text/javascript">
 
